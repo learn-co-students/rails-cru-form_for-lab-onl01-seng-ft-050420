@@ -1,0 +1,6 @@
+<h1>genress Page</h1>
+<% @genres.each do |a| %>
+    <%= link_to a.name, genre_path(a) %>
+<% end %>
+
+<div> <%= link_to "Add genres", new_genre_path %> </div>
